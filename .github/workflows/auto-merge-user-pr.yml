@@ -18,7 +18,8 @@ jobs:
       - name: Auto Merge if PR author is allowed
         if: ${{ contains(fromJson('["cmihk", "dishao123"]'), github.actor) }}
         run: |
-          echo "自动合并来自用户 ${github.actor} 的 PR 请求"
+          echo "自动合并来自用户 $ACTOR 的 PR 请求"
           gh pr merge --auto --squash "${{ github.event.pull_request.html_url }}"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ACTOR: ${{ github.actor }}
