@@ -18,13 +18,13 @@
         {
             "binding": "DB",
             "database_name": "navigation-db-local",
-            "database_id": "43ff28e1-42d6-4e53-9657-0702ae1353b6"
+            "database_id": "03133bdf-be1d-42f2-a644-1cf14ecbcf6a"
         }
     ],
     "vars": {
         "AUTH_ENABLED": "true",
-        "AUTH_USERNAME": "linuxdo",
-        "AUTH_PASSWORD": "linuxdo",
-        "AUTH_SECRET": "linuxdo"
+        "AUTH_USERNAME": "admin",
+        "AUTH_PASSWORD": "123456",
+        "AUTH_SECRET": "navihive"
     }
 }
